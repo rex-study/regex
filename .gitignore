@@ -2,3 +2,6 @@
 .mvn
 
 **/node_modules/**
+
+
+*.iml
