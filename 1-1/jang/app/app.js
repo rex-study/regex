@@ -3,39 +3,40 @@
 module.exports = () => {
 
     // Class
-    function JoinFormat (id, password, email, phone) {
-        this.id = id;
-        this.pass = password;
-        this.email = email;
-        this.phone = phone;
-    }
+    function JoinFormat () {}
 
     let userInfo = new JoinFormat();
 
-    userInfo.id = regexId('skjflkjfo424f24f$0si#$');
-    userInfo.pass = regexPassword('123456788990!!!!');
+    userInfo.id = regexId('abcdd_23efghijk424f24f$0si#$');
+    userInfo.pass = regexPassword('vjadA56788990');
     userInfo.email = regexEmail('jang1234@netmarble.net');
     userInfo.phone = regexPhone('010-1234-1245');
+    userInfo.schedule = regexSchedule('1,23,55,7,153,09');
 
 
     //id
     function regexId(id) {
-        return /\D/gi.test(id);
+        return /^[a-z]\w{9,}/g.test(id);
     }
 
     //password
     function regexPassword(pass) {
-        return /\D/gi.test(pass);
+        return /[0-9a-zA-Z]{10,}/g.test(pass);
     }
 
     //email
     function regexEmail(email) {
-        return /\D/gi.test(email);
+        return /\D/g.test(email);
     }
 
     //phone
     function regexPhone(phone) {
-        return /\D/gi.test(phone);
+        return /\D/g.test(phone);
+    }
+
+    //schedule
+    function regexSchedule(schedule) {
+        return schedule.match(/\d+(?=\,)|\d$/g);
     }
 
     return userInfo;

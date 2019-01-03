@@ -18,4 +18,8 @@ describe('Test Case', () => {
         expect(fromData().phone).toBe(true);
     });
 
+    it('숫자 범위 마지막은 콤마(,)가 없어야 하는 스케줄 숫자', () => {
+        expect(fromData().schedule).toBe(true);
+    });
+
 });
