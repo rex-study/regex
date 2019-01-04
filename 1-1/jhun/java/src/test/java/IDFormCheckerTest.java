@@ -6,6 +6,22 @@ public class IDFormCheckerTest {
     private final CheckType CHECK_TYPE = CheckType.ID;
 
     @Test
+    public void ifWordIsNull() {
+        String id = "";
+        String id2 = " ";
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, id));
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, id2));
+    }
+
+    @Test
+    public void wordLastIsNullWithNull() {
+        String id = "aabbccdde ";
+        String id2 = "a vcvasdw";
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, id));
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, id2));
+    }
+
+    @Test
     public void onlyEnglish() {
         String id = "jhun";
         Assert.assertTrue(FormChecker.check(CHECK_TYPE, id));
@@ -22,6 +38,12 @@ public class IDFormCheckerTest {
     public void onlyEnglishAndLong() {
         String id = "jhunjhunjhunjhunjhun";
         Assert.assertFalse(FormChecker.check(CHECK_TYPE, id));
+    }
+
+    @Test
+    public void onlyEnglishLength10() {
+        String id = "aabbccddee";
+        Assert.assertTrue(FormChecker.check(CHECK_TYPE, id));
     }
 
     @Test
