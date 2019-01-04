@@ -1,11 +1,12 @@
 public enum CheckType {
-    ID(""),
-    PASSWORD(""),
-    EMAIL(""),
-    PHONE("");
+    ID("", 10),
+    PASSWORD("", 10),
+    EMAIL("", 10),
+    PHONE("", 10);
 
-    CheckType(String regex) {
+    CheckType(String regex, Integer length) {
         this.regex = regex;
+        this.limitLength = length;
     }
 
     public String getRegex() {
@@ -13,4 +14,9 @@ public enum CheckType {
     }
 
     private String regex;
+    private Integer limitLength;
+
+    public Integer getLimitLength() {
+        return limitLength;
+    }
 }
