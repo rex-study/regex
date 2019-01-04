@@ -3,7 +3,10 @@ class FormChecker {
         if(str.length() > checkType.getLimitLength()){
             return false;
         }
-        String regex = checkType.getRegex();
-        return str.matches(regex);
+        return str.matches(checkType.getRegex());
+    }
+
+    static Boolean checkOnlyRegex(CheckType checkType , String str){
+        return str.matches(checkType.getRegex());
     }
 }
