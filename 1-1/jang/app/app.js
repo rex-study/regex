@@ -1,17 +1,18 @@
 'use strict';
+let dataImport = require('./userData');
 
 module.exports = () => {
 
     // Class
     function JoinFormat () {}
-
     let userInfo = new JoinFormat();
 
-    userInfo.id = regexId('abcdd_23efghijk424f24f$0si#$');
-    userInfo.pass = regexPassword('vjadA56788990');
-    userInfo.email = regexEmail('jang1234@netmarble.net');
-    userInfo.phone = regexPhone('010-1234-1245');
-    userInfo.schedule = regexSchedule('1,23,55,7,153,09');
+    dataImport.dummy.forEach(e => {
+        userInfo.id = regexId(e.id);
+        userInfo.pass = regexPassword(e.pass);
+        userInfo.email = regexEmail(e.email);
+        userInfo.phone = regexPhone(e.phone);
+    });
 
 
     //id
@@ -21,7 +22,7 @@ module.exports = () => {
 
     //password
     function regexPassword(pass) {
-        return /[0-9a-zA-Z]{10,}/g.test(pass);
+        return pass.match(/([0-9a-zA-Z]){10,}/g);
     }
 
     //email
@@ -32,11 +33,6 @@ module.exports = () => {
     //phone
     function regexPhone(phone) {
         return /\D/g.test(phone);
-    }
-
-    //schedule
-    function regexSchedule(schedule) {
-        return schedule.match(/\d+(?=\,)|\d$/g);
     }
 
     return userInfo;
