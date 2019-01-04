@@ -59,9 +59,15 @@ public class PhoneFormCheckerTest {
         String p2 = "010-123- 1234";
         String p3 = "010-123-1234 ";
         String p4 = "010-123-1234   ";
-        Assert.assertFalse(FormChecker.check(CHECK_TYPE,p));
-        Assert.assertFalse(FormChecker.check(CHECK_TYPE,p2));
-        Assert.assertFalse(FormChecker.check(CHECK_TYPE,p3));
-        Assert.assertFalse(FormChecker.check(CHECK_TYPE,p4));
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, p));
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, p2));
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, p3));
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, p4));
+    }
+
+    @Test
+    public void longPhone() {
+        String p = "010-1234-12345";
+        Assert.assertFalse(FormChecker.check(CHECK_TYPE, p));
     }
 }
