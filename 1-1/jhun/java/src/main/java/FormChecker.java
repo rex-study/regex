@@ -6,7 +6,7 @@ class FormChecker {
         return str.matches(checkType.getRegex());
     }
 
-    static Boolean checkOnlyRegex(CheckType checkType , String str){
+    static Boolean checkOnlyRegex(CheckTypeOnlyRegex checkType , String str){
         return str.matches(checkType.getRegex());
     }
 }
