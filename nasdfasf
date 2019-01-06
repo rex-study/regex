@@ -1,0 +1,121 @@
+[33mcommit 04c682e6c76169e365457785dcb8de76bc7b7000[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 086f885 016c548
+Author: jangseonho <jsh3658@nm-4ones.com>
+Date:   Fri Jan 4 17:15:50 2019 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 086f885fa9a1eec15d6f1354f00f2f4b5e0007fb[m
+Author: jangseonho <jsh3658@nm-4ones.com>
+Date:   Fri Jan 4 17:15:43 2019 +0900
+
+    정규표현식을 이용하여 jasmine-node
+
+[33mcommit 016c5488744042040210632575b4ed0638945fb7[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 10:00:23 2019 +0900
+
+    TC 추가
+
+[33mcommit 7267380ba3d3b6475ee978298b1238abfd64e010[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:59:27 2019 +0900
+
+    폰의 경우 추가
+
+[33mcommit 0feb6790991c8558c3bd3c539c16e11fa69e44e9[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:51:15 2019 +0900
+
+    case 추가
+
+[33mcommit babf9ac22b154706ccb0f1bc449b49d934d854ed[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:41:12 2019 +0900
+
+    case 추가
+
+[33mcommit a1cfaa3a4635cc3902e52dd73e1c300570b5e1bf[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:38:11 2019 +0900
+
+    ID check 에 대한 추가
+
+[33mcommit 401c9d0a0edc9952675003e9e0e1a1691dfc698a[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:31:20 2019 +0900
+
+    checkTypeOnlyRegex 추가
+
+[33mcommit 3355575fd4216192d25179b04ec93374611a513d[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:28:35 2019 +0900
+
+    코드 골프 & 정규식으로만 하는 메소드 추가
+
+[33mcommit 9160c1d581883496cc47d578d3db22f07ea55c80[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:26:39 2019 +0900
+
+    제한 길이 추가
+
+[33mcommit 797be053f13a7c0b3840529a7917a16dc8492c81[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:22:45 2019 +0900
+
+    gitignore gradle update
+
+[33mcommit ba323cdf60f0981bb213ccf1e64db3524ff68b26[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:22:31 2019 +0900
+
+    1-1 init java project
+
+[33mcommit e31cedb7fe5e1ad4c127e9d58d46b8a0cc80f0ba[m
+Merge: ecbadb7 8a3f900
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:03:36 2019 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit ecbadb785c47c795e45c578d23e85b43efc32ef5[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Fri Jan 4 09:03:28 2019 +0900
+
+    ReadMe 업데이트
+
+[33mcommit 93a1e1ad80d94c9e710f841cacd35f74658a1faf[m
+Author: jangseonho <jsh3658@nm-4ones.com>
+Date:   Thu Jan 3 19:00:18 2019 +0900
+
+    정규표현식을 이용하여 jasmine-node test_1
+
+[33mcommit b305a3be4b0ccec9b4911c838dbfd9f637ddb915[m
+Author: jangseonho <jsh3658@nm-4ones.com>
+Date:   Thu Jan 3 17:58:57 2019 +0900
+
+    정규표현식을 이용하여 jasmine-node test
+
+[33mcommit 8a3f900203ccedd91b42611ae01fc1a2161d62a0[m
+Author: jangseonho <jsh3658@nm-4ones.com>
+Date:   Thu Jan 3 11:33:21 2019 +0900
+
+    npm init
+
+[33mcommit 042293ea5f2bdc4b2d7f2b5ab9b84dfc948950b1[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Wed Jan 2 18:25:28 2019 +0900
+
+    링크 추가
+
+[33mcommit be0c078999f1f779ce60ea499c6b38ffe2ed9982[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Wed Jan 2 18:23:02 2019 +0900
+
+    ReadMe 업데이트
+
+[33mcommit fe79df5f1e72a627030cec15ed1b260b267bde6f[m
+Author: jhun <jhun@nm-4ones.com>
+Date:   Wed Jan 2 18:07:41 2019 +0900
+
+    init
