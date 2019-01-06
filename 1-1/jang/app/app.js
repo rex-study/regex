@@ -14,25 +14,24 @@ module.exports = () => {
         userInfo.phone = regexPhone(e.phone);
     });
 
-
     //id
     function regexId(id) {
-        return /^[a-z]\w{9,}/g.test(id);
+        return /^[a-z][0-9a-zA-Z]{9,}$/g.test(id);
     }
 
     //password
     function regexPassword(pass) {
-        return pass.match(/([0-9a-zA-Z]){10,}/g);
+        return /^[0-9a-zA-Z!@#$]{10,}$/g.test(pass);
     }
 
     //email
     function regexEmail(email) {
-        return /\D/g.test(email);
+        return /^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[a-zA-Z]+$/g.test(email);
     }
 
     //phone
     function regexPhone(phone) {
-        return /\D/g.test(phone);
+        return /^\d{3}\-\d{3,4}\-\d{3,4}$/g.test(phone);
     }
 
     return userInfo;
