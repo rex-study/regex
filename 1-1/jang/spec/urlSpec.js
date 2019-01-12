@@ -1,9 +1,9 @@
 let URLSpec = require('../2주차/app/url.js');
 
+console.log(URLSpec());
 describe('URL', () => {
-    it('올바른 URL', () => {
+    it('URL TEST', () => {
         URLSpec().forEach(e => {
-            console.log(e);
             expect(e.regex).toBe(true);
         });
     });
