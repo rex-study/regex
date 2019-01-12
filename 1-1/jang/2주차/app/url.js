@@ -1,8 +1,8 @@
 'use strict';
 
-module.export = () => {
+module.exports = () => {
     let regex = /https?:\/\/www\.\w+\.([a-zA-Z]{2}\.)?[a-zA-Z]{2,3}(\/\w+)*((\?\w+\=\w{1,2047})*\=$)?/gi;
-    let result = null;
+    let result = [];
 
     //올바른 URL
     const correctURL = [
@@ -29,11 +29,12 @@ module.export = () => {
         'http://www.11asdfasdfasdfas11.net?user=fsdf23f3?product=fkafj230fkslk+df230fksdfj='
     ]
 
-    correctURL.map(e => {
-        result = regex.test(e);
+    incorrectURL.map(x => {
+        result.push({
+            'regex' : regex.test(x),
+            'url' : x.match(regex)
+        });
     });
-
-    console.log(result);
 
     return result;
 }
