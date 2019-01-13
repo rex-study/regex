@@ -6,7 +6,7 @@ import regex.valid.FormChecker;
 
 public class IDFormCheckerTest {
 
-    private final CheckType CHECK_TYPE = CheckType.ID;
+    private final OneCheckType CHECK_TYPE = OneCheckType.ID;
 
     @Test
     public void ifWordIsNull() {

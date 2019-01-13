@@ -28,7 +28,7 @@ public class EmailFormCheckerTest {
                 "jhun2@jhu2_com.go.kr",
                 "jhun2@jhun.net");
 
-        Assert.assertFalse(emails.stream().anyMatch(x -> !FormChecker.check(CheckType.EMAIL, x)));
+        Assert.assertFalse(emails.stream().anyMatch(x -> !FormChecker.check(OneCheckType.EMAIL, x)));
     }
 
     @Test
@@ -49,7 +49,7 @@ public class EmailFormCheckerTest {
                 "asd@com",
                 "!jhun2@jhun.net");
 
-        Assert.assertFalse(emails.stream().anyMatch(x -> FormChecker.check(CheckType.EMAIL, x)));
+        Assert.assertFalse(emails.stream().anyMatch(x -> FormChecker.check(OneCheckType.EMAIL, x)));
     }
 
     @Test
@@ -61,8 +61,8 @@ public class EmailFormCheckerTest {
         String emailLength51 = idLength44 + "@ab.com";
         Assert.assertEquals(51, emailLength51.length());
 
-        Assert.assertFalse(FormChecker.check(CheckType.EMAIL, emailLength51));
-        Assert.assertTrue(FormChecker.check(CheckType.EMAIL, emailLength50));
+        Assert.assertFalse(FormChecker.check(OneCheckType.EMAIL, emailLength51));
+        Assert.assertTrue(FormChecker.check(OneCheckType.EMAIL, emailLength50));
 
     }
 }

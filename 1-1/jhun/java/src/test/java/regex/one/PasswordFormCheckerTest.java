@@ -26,7 +26,7 @@ public class PasswordFormCheckerTest {
                 "qwe123"
         );
 
-        Assert.assertFalse(pass.stream().anyMatch(x -> !FormChecker.check(CheckType.PASSWORD, x)));
+        Assert.assertFalse(pass.stream().anyMatch(x -> !FormChecker.check(OneCheckType.PASSWORD, x)));
     }
 
     @Test
@@ -48,6 +48,6 @@ public class PasswordFormCheckerTest {
                 "asda)",
                 "asda_sd*"
         );
-        Assert.assertFalse(pass.stream().anyMatch(x -> FormChecker.check(CheckType.PASSWORD, x)));
+        Assert.assertFalse(pass.stream().anyMatch(x -> FormChecker.check(OneCheckType.PASSWORD, x)));
     }
 }

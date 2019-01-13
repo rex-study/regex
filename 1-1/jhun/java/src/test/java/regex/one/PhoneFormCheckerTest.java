@@ -6,7 +6,7 @@ import regex.valid.FormChecker;
 
 public class PhoneFormCheckerTest {
 
-    private final CheckType CHECK_TYPE = CheckType.PHONE;
+    private final OneCheckType CHECK_TYPE = OneCheckType.PHONE;
 
     @Test
     public void simplePhone() {

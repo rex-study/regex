@@ -1,6 +1,6 @@
 package regex.valid;
 
-import regex.one.CheckType;
+import regex.CheckType;
 import regex.one.CheckTypeOnlyRegex;
 
 public class FormChecker {
