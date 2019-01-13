@@ -1,5 +1,8 @@
+package regex.one;
+
 import org.junit.Assert;
 import org.junit.Test;
+import regex.valid.FormChecker;
 
 import java.util.Arrays;
 import java.util.List;
