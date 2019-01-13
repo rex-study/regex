@@ -41,7 +41,7 @@ public class SCHEDULETwoCheckTypeTest {
 
         boolean aaa = simpleSCHE.stream()
                 .anyMatch(x -> {
-                    if (!FormChecker.check(TwoCheckType.SCHEDULE, x.toLowerCase())) {
+                    if (!FormChecker.check(TwoCheckType.SCHEDULE, x)) {
                         System.out.println(x);
                         return true;
                     }
@@ -57,7 +57,7 @@ public class SCHEDULETwoCheckTypeTest {
 
         boolean aaa = badSCHE.stream()
                 .anyMatch(x -> {
-                    if (FormChecker.check(TwoCheckType.SCHEDULE, x.toLowerCase())) {
+                    if (FormChecker.check(TwoCheckType.SCHEDULE, x)) {
                         System.out.println(x);
                         return true;
                     }

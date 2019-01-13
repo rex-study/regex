@@ -19,7 +19,7 @@ public enum TwoCheckType implements CheckType {
     BASE64("^[a-zA-Z0-9\\+\\/]+\\=?\\=$", 900),
     POST("", 1),
     SCHEDULE("((^2[0-4])|(^1[0-9])|(^[0-9]))(,2[0-4]|,1[0-9]|,[0-9])*", 999),
-    KOREAN("", 1);
+    KOREAN("^(([가-힣])+|([ㅡ|ㅜ|ㅠ]{1,2})|([ㄱ-ㅎ]{1,2}))((([ㄱ-ㅎ]{1,2})|([ㅡ|ㅜ|ㅠ]{1,2}))*)", 999);
 
     private String regex;
     private Integer limitLength;
