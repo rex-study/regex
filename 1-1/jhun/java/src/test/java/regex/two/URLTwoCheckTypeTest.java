@@ -23,7 +23,9 @@ public class URLTwoCheckTypeTest {
             "https://www.naver.com/qwqwe/?id=hqweloqwe123123",
             "https://asdsad.na123ver.com/qwqw_qwee/?id=hqweloqwe123123",
             "https://asdsad.na123ver.com/qwqw_qwee/?id=hqweloqwe123123&password=qweqweqwe&user_name=",
-            "https://asdsad.na123ver.com/qwqw_qwee/?id=hqweloqwe123123&password=qweqweqwe&user_name=asdasd"
+            "https://asdsad.na123ver.com/qwqw_qwee/?id=hqweloqwe123123&password=qweqweqwe&user_name=asdasd",
+            "https://asdsad.na123ver.com/qwqw_qwee/?id=hqweloqwe123123&password=7JyI44S3cXdlcUFEUVdFd2VsO3Rna213bGVnbDtkcmJuO3JuWzsncm4uL3JmLm0vJ3J0eQ0K44WC44WI44S344WC44WK44S344WC44S344WI44WKWw==",
+            "https://asdsad.na123ver.com/qwqw_qwee/?id=hqweloqwe123123&password=7JyI7Jy87ZW=7ZWY7Z6a6rCA44Wj44WI66C144WI44S5IUAjISMhQCMrDQor44WC44WI44S3cXdlcUFEUVdFd2VsO3Rna213bGVnbDtkcmJuO3JuWzsncm4uL3JmLm0vJ3J0eQ0K44WC44WI44S344WC44WK44S344WC44S344WI44WKWw=="
     );
 
     private final List<String> badUrl = Arrays.asList(
