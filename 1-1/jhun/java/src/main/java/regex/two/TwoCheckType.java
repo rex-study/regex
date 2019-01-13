@@ -16,7 +16,7 @@ public enum TwoCheckType implements CheckType {
 
 
     URL("^(http)s?:\\/\\/(\\w+\\.)?\\w+(\\.[a-zA-Z]{1,3})?\\.[a-zA-Z]{1,3}\\/?(\\w+\\/?)*(\\?(\\w+\\=(\\w+)?\\&?)*)?$", 500),
-    BASE64("", 1),
+    BASE64("^[a-zA-Z0-9\\+\\/]+\\=?\\=$", 900),
     POST("", 1),
     SCHEDULE("", 1),
     KOREAN("", 1);
