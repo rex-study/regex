@@ -4,7 +4,22 @@ import regex.CheckType;
 
 public enum TwoCheckType implements CheckType {
 
-    GET_URL("", 1);
+//     - 스케줄
+//    우편번호 검색기
+//
+//        - base64 검사기
+//
+//    - url syntax 검사기
+//
+//    한글 검사기
+
+
+
+    URL("", 1),
+    BASE64("", 1),
+    POST("", 1),
+    SCHEDULE("", 1),
+    KOREAN("", 1);
 
     private String regex;
     private Integer limitLength;
