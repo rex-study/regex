@@ -19,7 +19,7 @@ const wrongAddress = [
     '강원도 속초시 동명동 595-2 속초 THE-조은펠리스아파트!!!!!!!'
 ]
 
-wrongAddress.map(e => {
+address.map(e => {
     result.push({
         'regex': regex.test(e),
         'url': e.match(regex)
