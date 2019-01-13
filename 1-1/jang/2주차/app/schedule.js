@@ -21,7 +21,7 @@ const scheduleWrongCommon = [
     '8 '
 ]
 
-scheduleWrongCommon.map(el => {
+scheduleGood.map(el => {
     result.push({
         'regex' : regex.test(el),
         'url' : el.match(regex)
